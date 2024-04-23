@@ -19,6 +19,6 @@ app.use(cookieParser());
 import userRouter from "./routes/user.routes.js";
 
 //routes declaration
-//we cannot declare route like app.use like we normally do we need to use middlewares
+//we cannot declare route like app.GET like we normally do we need to use middlewares
 app.use("/api/v1/users", userRouter);
 export { app };
